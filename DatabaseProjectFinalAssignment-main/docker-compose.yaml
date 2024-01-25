@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  app:
+    build: ./app/
+    networks:
+      - mynetwork # Assign the app container to the custom network
+    depends_on:
+      - db # Ensure that the app container starts after the db container
+
+  db:
+    build: ./database/
+    ports:
+      - '5432:5432'
+    networks:
+      - mynetwork # Assign the db container to the custom network
+
+networks:
+  mynetwork: # Define a custom network named "mynetwork"
