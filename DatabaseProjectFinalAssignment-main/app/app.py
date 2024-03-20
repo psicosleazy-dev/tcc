@@ -7,14 +7,6 @@ db_pass = 'secret'
 db_host = 'localhost'
 db_port = '5432'
 
-
-def queryGeneral(cursor):
-
-    cursor.execute(
-        "SELECT * FROM processo_seletivos_graduacao WHERE curso like 'Admin%'")
-    rows = cursor.fetchall()
-
-
 def queryCourseEvasionOne(cursor):
 
     cursor.execute(
@@ -60,9 +52,6 @@ if __name__ == '__main__':
             database=db_name, user=db_user, password=db_pass, host=db_host, port=db_port
         )
         cursor = conn.cursor()  # connect to database and create a cursor
-
-        cursor.execute("SELECT * FROM Processo_Seletivos_Graduacao")
-        queryResult = cursor.fetchall()
         cursor.execute("SELECT * FROM Quantitativo_Alunos_Graduacao")
         queryResult += cursor.fetchall()
         if len(queryResult) == 0:
