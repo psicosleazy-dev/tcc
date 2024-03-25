@@ -15,4 +15,8 @@ LIMIT 5;
 SELECT nome_curso,ano,periodo,sum(evadidos) AS evadidos
 FROM quantitativo_alunos_graduacao
 GROUP BY nome_curso,ano,periodo
-ORDER BY ano,periodo;
+ORDER BY ano,periodo; -- em analise
+
+SELECT ano, SUM(ingressantes) AS Total_Ingressantes, SUM(evadidos) AS Total_Evadidos
+FROM quantitativo_de_alunos
+GROUP BY Ano;
