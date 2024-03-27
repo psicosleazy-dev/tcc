@@ -34,3 +34,15 @@ GROUP BY
     Ano
 ORDER BY
     Proporcao_Evadidos_Ingressantes DESC;
+
+SELECT
+    ano,
+    SUM(vinculados) AS Total_Vinculados,
+    SUM(evadidos) AS Total_Evadidos,
+    SUM(vinculados) * 1.0 / SUM(evadidos) AS Proporcao_Vinculados_Evadidos
+FROM
+    quantitativo_de_alunos
+GROUP BY
+    Ano
+order by
+	Proporcao_Vinculados_Evadidos;
