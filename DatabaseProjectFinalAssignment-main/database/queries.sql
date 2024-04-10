@@ -1,10 +1,16 @@
 -- SELECT ano, processo_seletivo, curso, nr_vagas FROM processo_seletivos_graduacao;
 
+-- Achar os cursos com maior número de evasão na base de dados (nesse caso, os 5 maiores)
+
 SELECT nomecurso, SUM(evadidos) AS total_evadidos
 FROM quantitativo_alunos
-GROUP_BY nomecurso
+GROUP BY nomecurso
 ORDER BY total_evadidos DESC
 LIMIT 5;
+
+/*  Achar os cursos com maiores TAXAS (%) de alunos evadidos por vinculados, que mostrará com mais precisão
+os cursos que mais tem alunos evadindo, pois existem cursos com muitos mais alunos que outros, e,
+naturalmente eles teriam uma evasão maior proporcional. */
 
 SELECT nomecurso, ano, periodo, ((evadidos*100/vinculados)) AS pct_evadidos
 FROM quantitativo_alunos
