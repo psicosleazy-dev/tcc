@@ -51,4 +51,4 @@ FROM
 GROUP BY
     Ano
 order by
-	Proporcao_Vinculados_Evadidos;
+	Proporcao_Vinculados_Evadidos DESC;
