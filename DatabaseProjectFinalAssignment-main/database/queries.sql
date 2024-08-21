@@ -6,7 +6,7 @@ SELECT nomecurso, SUM(evadidos) AS total_evadidos
 FROM quantitativo_alunos
 GROUP BY nomecurso
 ORDER BY total_evadidos DESC
-LIMIT 5;
+LIMIT 10;
 
 /*  Achar os cursos com maiores TAXAS (%) de alunos evadidos por vinculados, que mostrará com mais precisão
 os cursos que mais tem alunos evadindo, pois existem cursos com muitos mais alunos que outros, e,
@@ -16,7 +16,7 @@ SELECT nomecurso, ano, periodo, ((evadidos*100/vinculados)) AS pct_evadidos
 FROM quantitativo_alunos
 WHERE ((evadidos*100/vinculados)) < 100
 ORDER BY pct_evadidos DESC
-LIMIT 5;
+LIMIT 10;
 
 -- consultas novas
 
@@ -28,21 +28,21 @@ SELECT nomecurso, ano, periodo, ((ingressantes*100/vinculados)) AS pct_ingressan
 FROM quantitativo_de_alunos
 WHERE ((ingressantes*100/vinculados)) < 100
 ORDER BY pct_ingressantes DESC
-LIMIT 5;
+LIMIT 10;
 
 SELECT nomecurso, ano, periodo, ((ingressantes*100/vinculados)) AS pct_ingressantes
 FROM quantitativo_de_alunos
 WHERE ((ingressantes*100/vinculados)) < 100
 AND ano BETWEEN 2020 AND 2022
 ORDER BY pct_ingressantes DESC
-LIMIT 5;
+LIMIT 10;
 
 SELECT nomecurso, ano, periodo, ((evadidos*100/vinculados)) AS pct_evadidos
 FROM quantitativo_de_alunos
 WHERE ((evadidos*100/vinculados)) < 100
 AND ano BETWEEN 2020 AND 2022
 ORDER BY pct_evadidos DESC
-LIMIT 5;
+LIMIT 10;
 
 
 SELECT ano, periodo, MAX((ingressantes*100/vinculados)) AS max_pct_ingressantes
@@ -50,11 +50,11 @@ FROM quantitativo_de_alunos qda
 WHERE (ingressantes*100/vinculados) < 100
 GROUP BY ano, periodo
 ORDER BY max_pct_ingressantes desc
-LIMIT 5;
+LIMIT 10;
 
 SELECT ano, periodo, MAX((evadidos*100/vinculados)) AS max_pct_ingressantes
 FROM quantitativo_de_alunos qda
 WHERE (evadidos*100/vinculados) < 100
 GROUP BY ano, periodo
 ORDER BY max_pct_ingressantes desc
-LIMIT 5;
+LIMIT 10;
