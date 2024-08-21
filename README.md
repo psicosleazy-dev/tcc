@@ -1,15 +1,14 @@
 # Análise Quantitativa de Dados Pós-Ensino Remoto Emergencial na UFRGS 🎓📊
 
-Este projeto de TCC visa realizar uma análise exploratória e quantitativa dos dados educacionais da Universidade Federal do Rio Grande do Sul (UFRGS) após o período de Ensino Remoto Emergencial (ERE). O objetivo é compreender melhor como o ERE afetou métricas como matrícula, evasão, desempenho acadêmico e engajamento dos alunos nos cursos de Ciências da Computação e Engenharia da Computação.
+Este projeto de TCC visa realizar uma análise exploratória e quantitativa dos dados educacionais da Universidade Federal do Rio Grande do Sul (UFRGS) após o período de Ensino Remoto Emergencial (ERE) entre os anos 2010 e 2022. O objetivo é compreender melhor como o ERE afetou métricas como matrícula, evasão, desempenho acadêmico e engajamento dos alunos nos cursos de Ciências da Computação e Engenharia da Computação.
 
 ## 📑 Sobre o Projeto
 
 Com a adoção do Ensino Remoto Emergencial, as universidades precisaram adaptar suas práticas pedagógicas para enfrentar os desafios impostos pela pandemia da COVID-19. Este projeto busca investigar as implicações dessas mudanças no contexto acadêmico, através da análise de dados quantitativos e da visualização de informações.
 
 A análise inclui:
-- **Desempenho Acadêmico**: Avaliação das notas e taxas de aprovação dos alunos.
+- **Pesquisa e exploração**: Avaliação dos dados quantitativos e como se comportam ao longo dos anos.
 - **Evasão**: Estudo das taxas de evasão ao longo dos semestres durante o ERE.
-- **Engajamento**: Análise da participação e frequência dos estudantes nas aulas remotas.
 - **Matrículas**: Comparação das matrículas antes e durante o período de ERE.
 
 ### 🔍 Objetivos
