@@ -23,8 +23,10 @@ A análise inclui:
 O projeto está organizado da seguinte maneira:
 
 ```plaintext
-├── data/                    # Diretório contendo os dados utilizados na análise
+├── data/                    # Diretório contendo os dados utilizados na análise e demais dados referente ao projeto
 ├── notebooks/               # Jupyter Notebooks com as análises de dados e visualizações
 ├── results/                 # Resultados e gráficos gerados pelas análises
+├── references/              # Algumas referências do projeto
 ├── README.md                # Este arquivo de documentação
-└── requirements.txt         # Dependências do projeto (bibliotecas Python)
+└── Lucas_Brum_TCC.pdf       # Monografia (TCC) do projeto
+ 
