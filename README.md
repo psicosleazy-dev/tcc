@@ -27,6 +27,7 @@ O projeto está organizado da seguinte maneira:
 ├── notebooks/               # Jupyter Notebooks com as análises de dados e visualizações
 ├── results/                 # Resultados e gráficos gerados pelas análises
 ├── references/              # Algumas referências do projeto
+    ├── flowchart/           # Arquivos do fluxograma do projeto
 ├── README.md                # Este arquivo de documentação
 └── Lucas_Brum_TCC.pdf       # Monografia (TCC) do projeto
  
